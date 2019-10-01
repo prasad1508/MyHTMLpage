@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- https://www.youtube.com/watch?v=lUaw-AA9HnA -->
+    <style>
+         body {
+            display: grid;
+            place-items: center;
+            height: 100vh;
+            font-weight: 300;
+            line-height: 1.6;
+
+        } 
+.card{
+    position: relative;
+    width: 40%;
+}
+
+.card::before,
+.card::after{
+    content: '';
+    position: absolute;
+    border: 1px solid white;
+}
+
+.card::before{
+    top: 1rem;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.card::after{
+    bottom: 1rem;
+    right: 1rem;
+    left: 1rem;
+}
+
+.card__img{
+    position: absolute;
+    width: 100%;
+     height: 100%;
+     object-fit:cover;
+     z-index: -1;
+
+}
+.card__body{
+    background: rgba(0,0,0,0.5);
+    color: white;
+    padding: 2rem;
+}
+.card__title{
+    font-size: 3rem;
+}
+
+.card__text{
+    margin: 0;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        
+         
+      
+        <img src="http://animalartist2.tripod.com/webonmediacontents/web-header-2017.jpg" alt="" 
+        style="border:red  3px solid;background-color: blueviolet"  class="card__img">
+ 
+        <div class="card__body" >
+            <h3 class="card__title" >This is card title</h3>
+            <p class="card__text">This is card text This is card text This is card text This is card text This is card text
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque expedita quibusdam vitae, enim obcaecati cupiditate
+                  iste, culpa hic possimus accusamus, ullam facere voluptas. Iusto temporibus asperiores exercitationem, pariatur
+                   illum dicta? end</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
